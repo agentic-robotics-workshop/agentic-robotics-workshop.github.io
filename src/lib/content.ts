@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 
 export const SPEAKERS: Person[] = [
   { name: "Ran Zhang", affiliation: "Tencent Video AI Center" },
-  { name: "Guanya Shi", affiliation: "Carnegie Mellon University" },
+  { name: "Guanya Shi", affiliation: "Carnegie Mellon University", image: "/people/guanya_shi.png" },
   { name: "Ken Goldberg", affiliation: "UC Berkeley" },
   { name: "Jonathan Tremblay", affiliation: "NVIDIA" },
 ];
