@@ -19,7 +19,7 @@ function Avatar({ person }: { person: Person }) {
           src={person.image}
           alt={person.name}
           loading="lazy"
-          className="h-full w-full object-cover grayscale transition-[filter] duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:grayscale-0"
+          className="h-full w-full object-cover"
         />
       </div>
     );

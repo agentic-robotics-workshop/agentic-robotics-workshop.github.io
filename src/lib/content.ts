@@ -9,10 +9,10 @@ export const NAV_LINKS = [
 ];
 
 export const SPEAKERS: Person[] = [
-  { name: "Ran Zhang", affiliation: "Tencent Video AI Center" },
+  { name: "Ran Zhang", affiliation: "Tencent Video AI Center", image: "/people/ran_zhang.jpg" },
   { name: "Guanya Shi", affiliation: "Carnegie Mellon University", image: "/people/guanya_shi.png" },
-  { name: "Ken Goldberg", affiliation: "UC Berkeley" },
-  { name: "Jonathan Tremblay", affiliation: "NVIDIA" },
+  { name: "Ken Goldberg", affiliation: "UC Berkeley", image: "/people/ken_goldberg.jpg" },
+  { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.jpg" },
 ];
 
 // Real organizers (restore when ready to publish):
