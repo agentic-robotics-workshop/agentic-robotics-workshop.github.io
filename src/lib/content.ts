@@ -15,14 +15,18 @@ export const SPEAKERS: Person[] = [
   { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.jpg" },
 ];
 
-// Real organizers (restore when ready to publish):
-//   Tianyu Shi — McGill University — Ph.D. from the University of Toronto, working on
-//     training embodied agents to make better decisions in the real world. 50+ papers
-//     across ICRA, ICML, and ACL, and co-organizer of the ICLR 2025 MEM-Agent workshop.
-//   Siyi Chen — University of Michigan — Ph.D. student in ECE working on generative AI,
-//     multimodal foundation models, agentic systems, and robotics.
 export const ORGANIZERS: Person[] = [
-  { name: "TBD" },
+  { name: "Tianyu Shi", affiliation: "McGill University", image: "/people/tianyu_shi.jpg", website: "https://tianyushi.org/" },
+  { name: "Gaotian Wang", affiliation: "Rice University", image: "/people/gaotian_wang.jpg", website: "https://vector-wangel.github.io/" },
+  { name: "Haoru Xue", affiliation: "UC Berkeley", image: "/people/haoru_xue.png", website: "https://haoruxue.github.io/" },
+  { name: "Max Fu", affiliation: "UC Berkeley", image: "/people/max_fu.jpg", website: "https://max-fu.github.io/" },
+  { name: "Wenli Xiao", affiliation: "Carnegie Mellon University", image: "/people/wenli_xiao.jpg", website: "https://wenlixiao.com/" },
+  { name: "Lingfeng Sun", affiliation: "Avant Robotics", image: "/people/lingfeng_sun.jpg", website: "https://lingfeng.moe/" },
+  { name: "Yifei Shao", affiliation: "University of Pennsylvania", image: "/people/yifei_shao.webp", website: "https://shaoyifei96.github.io/" },
+  { name: "Tianyu Li", affiliation: "University of Pennsylvania", image: "/people/tianyu_li.jpg", website: "https://imtianyuli.com/" },
+  { name: "Jiayuan Mao", affiliation: "Amazon FAR", image: "/people/jiayuan_mao.jpg", website: "https://jiayuanm.com/" },
+  { name: "Utkarsh Mishra", affiliation: "Georgia Tech", image: "/people/utkarsh_mishra.jpeg", website: "https://umishra.me/" },
+  { name: "Siyi Chen", affiliation: "University of Michigan", image: "/people/siyi_chen.jpeg", website: "https://chicychen.github.io/" },
 ];
 
 export const PROBLEMS: NumberedItem[] = [

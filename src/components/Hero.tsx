@@ -10,7 +10,7 @@ export function Hero() {
           <span>In-Person</span>
         </p>
 
-        <h1 className="mx-auto mt-8 max-w-[14ch] font-display text-6xl font-semibold leading-[0.95] tracking-[-0.02em] text-text-primary sm:text-7xl md:text-8xl lg:text-[120px] lg:leading-[1] lg:tracking-[-3px]">
+        <h1 className="mx-auto mt-8 max-w-[14ch] font-display text-5xl font-semibold leading-[0.95] tracking-[-0.02em] text-text-primary sm:text-6xl md:text-7xl lg:text-[88px] lg:leading-[1] lg:tracking-[-2px]">
           Workshop on Agentic Robotics
         </h1>
 
