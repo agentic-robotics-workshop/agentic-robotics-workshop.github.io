@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { label: "Problems", href: "#problems" },
   { label: "Format", href: "#format" },
   { label: "Speakers", href: "#speakers" },
+  { label: "Schedule", href: "#schedule" },
   { label: "Submissions", href: "#submissions" },
   { label: "Organizers", href: "#organizers" },
 ];
@@ -27,6 +28,7 @@ export const ORGANIZERS: Person[] = [
   { name: "Jiayuan Mao", affiliation: "Amazon FAR", image: "/people/jiayuan_mao.jpg", website: "https://jiayuanm.com/" },
   { name: "Utkarsh Mishra", affiliation: "Georgia Tech", image: "/people/utkarsh_mishra.jpeg", website: "https://umishra.me/" },
   { name: "Siyi Chen", affiliation: "University of Michigan", image: "/people/siyi_chen.jpeg", website: "https://chicychen.github.io/" },
+  { name: "Nadia Figueroa", affiliation: "University of Pennsylvania", image: "/people/nadia_figueroa.jpg", website: "https://nbfigueroa.github.io/" },
 ];
 
 export const PROBLEMS: NumberedItem[] = [
@@ -73,7 +75,7 @@ export const FORMAT_MODES: NumberedItem[] = [
     number: "1",
     title: "Standardized workshop tasks",
     descHtml:
-      "A small suite of diagnostic tasks on shared robot platforms — pick-and-place, sorting, re-arrangement, tool-use, and short-horizon sequences — chosen to expose the seams between <b>perception, reasoning, skill selection, control, and recovery</b>.",
+      "A small suite of diagnostic tasks spanning <b>tabletop manipulation, mobile manipulation, and navigation</b> — chosen to expose the seams between perception, reasoning, skill selection, control, and recovery. Run on shared setups from confirmed sponsors: <i>AgileX</i> bimanual arms and mobile bases and <i>Unitree</i> humanoids, with some tasks adapted from the <i>What Bimanuals Can Do</i> competition at ICRA 2026.",
   },
   {
     number: "2",
@@ -87,6 +89,13 @@ export const FORMAT_MODES: NumberedItem[] = [
     descHtml:
       "Bring your own robots or portable setups to broaden the session beyond any single embodiment. The organizers help with <b>shipping and logistics</b>.",
   },
+];
+
+export const SCHEDULE: { time: string; title: string }[] = [
+  { time: "14:00 – 14:15", title: "Opening remarks & workshop overview" },
+  { time: "14:15 – 15:40", title: "Invited talks & demo preparation" },
+  { time: "15:40 – 16:00", title: "Coffee break" },
+  { time: "16:00 – 18:00", title: "Live demos & poster session" },
 ];
 
 export const KEY_DATES: KeyDate[] = [
