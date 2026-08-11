@@ -1,5 +1,5 @@
 import { Countdown } from "@/components/Countdown";
-import { KEY_DATES, LINKS } from "@/lib/content";
+import { LINKS, SUBMISSION_DEADLINE } from "@/lib/content";
 
 const LABEL = "text-xs font-bold uppercase tracking-[0.18em] text-text-muted";
 const BODY = "text-xl font-light leading-[1.7] text-text-primary";
@@ -39,31 +39,18 @@ export function CallForContributions() {
         </p>
       </div>
 
-      {/* Deadline + tentative timeline */}
+      {/* Deadline */}
       <div className="mt-10 border border-black/[0.10] bg-black/[0.02] p-8 md:p-10">
-        <div className="flex items-baseline gap-3">
-          <p className={LABEL}>Submission Deadline</p>
-          <span className="rounded-full border border-black/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.15em] text-text-muted">
-            Tentative
-          </span>
-        </div>
+        <p className={LABEL}>Deadline</p>
         <p className="mt-3 font-display text-4xl font-semibold leading-none text-text-primary md:text-5xl">
-          Mid-September 2026
+          {SUBMISSION_DEADLINE.display}
+        </p>
+        <p className="mt-3 text-lg font-light text-text-primary">
+          {SUBMISSION_DEADLINE.time}
         </p>
         <p className={`${LABEL} mt-7`}>Submissions Close In</p>
         <div className="mt-4">
-          <Countdown placeholder />
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-x-10 gap-y-3 border-t border-black/[0.08] pt-6 sm:grid-cols-2 lg:grid-cols-4">
-          {KEY_DATES.map((d) => (
-            <div key={d.label}>
-              <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-text-muted">
-                {d.label}
-              </p>
-              <p className="mt-1 text-lg font-light text-text-primary">{d.date}</p>
-            </div>
-          ))}
+          <Countdown deadlineIso={SUBMISSION_DEADLINE.iso} />
         </div>
       </div>
 

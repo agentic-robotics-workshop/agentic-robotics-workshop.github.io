@@ -1,25 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 
 interface Parts {
   days: string;
   hrs: string;
   mins: string;
   secs: string;
-}
-
-function diff(target: number): Parts {
-  const now = Date.now();
-  let delta = Math.max(0, Math.floor((target - now) / 1000));
-  const days = Math.floor(delta / 86400);
-  delta -= days * 86400;
-  const hrs = Math.floor(delta / 3600);
-  delta -= hrs * 3600;
-  const mins = Math.floor(delta / 60);
-  const secs = delta - mins * 60;
-  const p = (n: number) => n.toString().padStart(2, "0");
-  return { days: p(days), hrs: p(hrs), mins: p(mins), secs: p(secs) };
 }
 
 const UNITS: { key: keyof Parts; label: string }[] = [
@@ -29,25 +16,54 @@ const UNITS: { key: keyof Parts; label: string }[] = [
   { key: "secs", label: "Secs" },
 ];
 
-export function Countdown({
-  deadlineIso,
-  placeholder = false,
-}: {
-  deadlineIso?: string;
-  placeholder?: boolean;
-}) {
-  const target = deadlineIso ? new Date(deadlineIso).getTime() : 0;
-  const [parts, setParts] = useState<Parts | null>(null);
+function secondsUntil(target: number) {
+  return Math.max(0, Math.floor((target - Date.now()) / 1000));
+}
 
-  useEffect(() => {
-    if (placeholder || !deadlineIso) return;
-    setParts(diff(target));
-    const id = setInterval(() => setParts(diff(target)), 1000);
-    return () => clearInterval(id);
-  }, [target, placeholder, deadlineIso]);
+function split(total: number): Parts {
+  const p = (n: number) => n.toString().padStart(2, "0");
+  return {
+    days: p(Math.floor(total / 86400)),
+    hrs: p(Math.floor((total % 86400) / 3600)),
+    mins: p(Math.floor((total % 3600) / 60)),
+    secs: p(total % 60),
+  };
+}
 
-  const value = (key: keyof Parts) =>
-    placeholder ? "XX" : parts ? parts[key] : "--";
+/**
+ * The ticking clock lives outside React so the server renders a neutral
+ * placeholder and the client takes over after hydration without a mismatch.
+ */
+function createClock(target: number) {
+  let snapshot = secondsUntil(target);
+  return {
+    subscribe(onChange: () => void) {
+      const id = setInterval(() => {
+        const next = secondsUntil(target);
+        if (next === snapshot) return;
+        snapshot = next;
+        onChange();
+      }, 250);
+      return () => clearInterval(id);
+    },
+    getSnapshot: (): number | null => snapshot,
+    getServerSnapshot: (): number | null => null,
+  };
+}
+
+export function Countdown({ deadlineIso }: { deadlineIso: string }) {
+  const clock = useMemo(
+    () => createClock(new Date(deadlineIso).getTime()),
+    [deadlineIso],
+  );
+  const remaining = useSyncExternalStore(
+    clock.subscribe,
+    clock.getSnapshot,
+    clock.getServerSnapshot,
+  );
+
+  const parts = remaining === null ? null : split(remaining);
+  const value = (key: keyof Parts) => (parts ? parts[key] : "--");
 
   return (
     <div className="flex items-end gap-3 sm:gap-4" aria-live="off">

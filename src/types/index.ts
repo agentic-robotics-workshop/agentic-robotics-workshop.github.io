@@ -14,8 +14,3 @@ export interface NumberedItem {
   /** rich description as HTML (uses <b>/<i> for emphasis) */
   descHtml: string;
 }
-
-export interface KeyDate {
-  label: string;
-  date: string;
-}

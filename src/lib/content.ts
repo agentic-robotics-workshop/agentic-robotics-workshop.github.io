@@ -1,4 +1,4 @@
-import type { KeyDate, NumberedItem, Person } from "@/types";
+import type { NumberedItem, Person } from "@/types";
 
 export const NAV_LINKS = [
   { label: "Problems", href: "#problems" },
@@ -98,12 +98,12 @@ export const SCHEDULE: { time: string; title: string }[] = [
   { time: "16:00 – 18:00", title: "Live demos & poster session" },
 ];
 
-export const KEY_DATES: KeyDate[] = [
-  { label: "Call for submissions", date: "July 2026" },
-  { label: "Submission deadline", date: "Mid-September 2026" },
-  { label: "Author notifications", date: "Early October 2026" },
-  { label: "Camera-ready", date: "Late October 2026" },
-];
+export const SUBMISSION_DEADLINE = {
+  display: "September 12, 2026",
+  /** 11:59 PM Anywhere on Earth (UTC−12) */
+  time: "11:59 PM Anywhere on Earth",
+  iso: "2026-09-13T11:59:00Z",
+};
 
 export const LINKS = {
   openReview: "https://openreview.net",
