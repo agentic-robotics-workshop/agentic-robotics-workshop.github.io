@@ -28,12 +28,14 @@ export function CallForContributions() {
       </h2>
 
       {/* Intro */}
-      <div className="mt-8 bg-black/[0.025] py-1">
-        <p className="text-lg font-bold uppercase leading-[1.7] tracking-[0.1em] text-text-primary md:text-xl">
-          We invite contributions across two tracks — a Demo Track and a Poster
-          Track — addressing the workshop&apos;s open problems.
+      <div className="mt-8 space-y-6 text-xl font-light leading-[1.7] text-text-primary md:text-2xl">
+        <p>
+          We invite contributions across two tracks — a{" "}
+          <strong className="font-bold">Demo Track</strong> and a{" "}
+          <strong className="font-bold">Poster Track</strong> —{" "}
+          addressing the workshop&apos;s open problems.
         </p>
-        <p className="mt-6 text-lg font-bold uppercase leading-[1.7] tracking-[0.1em] text-text-primary md:text-xl">
+        <p>
           All submissions are reviewed single-blind via{" "}
           <ExtLink href={LINKS.openReview}>OpenReview</ExtLink>.
         </p>
@@ -88,15 +90,6 @@ export function CallForContributions() {
             relevant communities.
           </p>
         </div>
-      </div>
-
-      {/* Eligibility note */}
-      <div className="mt-10">
-        <p className="inline-block rounded-full border border-black/15 bg-black/[0.03] px-8 py-5 text-lg text-text-primary md:text-xl">
-          📄 Following CoRL workshop policy, papers already accepted at the main{" "}
-          <strong className="font-bold">CoRL 2026</strong> conference are not
-          eligible.
-        </p>
       </div>
     </section>
   );

@@ -106,5 +106,6 @@ export const SUBMISSION_DEADLINE = {
 };
 
 export const LINKS = {
-  openReview: "https://openreview.net",
+  openReview:
+    "https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/Agentic_Robotics",
 };
