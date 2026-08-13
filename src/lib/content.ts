@@ -22,7 +22,7 @@ export const ORGANIZERS: Person[] = [
   { name: "Haoru Xue", affiliation: "UC Berkeley", image: "/people/haoru_xue.png", website: "https://haoruxue.github.io/" },
   { name: "Max Fu", affiliation: "UC Berkeley", image: "/people/max_fu.jpg", website: "https://max-fu.github.io/" },
   { name: "Wenli Xiao", affiliation: "Carnegie Mellon University", image: "/people/wenli_xiao.jpg", website: "https://wenlixiao.com/" },
-  { name: "Lingfeng Sun", affiliation: "Avant Robotics", image: "/people/lingfeng_sun.jpg", website: "https://lingfeng.moe/" },
+  { name: "Lingfeng Sun", image: "/people/lingfeng_sun.jpg", website: "https://lingfeng.moe/" },
   { name: "Yifei Shao", affiliation: "University of Pennsylvania", image: "/people/yifei_shao.webp", website: "https://shaoyifei96.github.io/" },
   { name: "Tianyu Li", affiliation: "University of Pennsylvania", image: "/people/tianyu_li.jpg", website: "https://imtianyuli.com/" },
   { name: "Jiayuan Mao", affiliation: "Amazon FAR", image: "/people/jiayuan_mao.jpg", website: "https://jiayuanm.com/" },
@@ -75,7 +75,7 @@ export const FORMAT_MODES: NumberedItem[] = [
     number: "1",
     title: "Standardized workshop tasks",
     descHtml:
-      "A small suite of diagnostic tasks spanning <b>tabletop manipulation, mobile manipulation, and navigation</b> — chosen to expose the seams between perception, reasoning, skill selection, control, and recovery. Run on shared setups from confirmed sponsors: <i>AgileX</i> bimanual arms and mobile bases and <i>Unitree</i> humanoids, with some tasks adapted from the <i>What Bimanuals Can Do</i> competition at ICRA 2026.",
+      "A small suite of diagnostic tasks spanning <b>tabletop manipulation, mobile manipulation, and navigation</b> — chosen to expose the seams between perception, reasoning, skill selection, control, and recovery.",
   },
   {
     number: "2",
