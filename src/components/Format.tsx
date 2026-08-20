@@ -11,7 +11,7 @@ export function Format() {
       </h2>
 
       <p className="rich mt-8 max-w-[70rem] text-xl font-light leading-[1.7] text-text-primary">
-        The half-day workshop is built around <b>live demonstrations</b> and
+        The workshop is built around <b>live demonstrations</b> and
         audience-driven discussion rather than a sequence of talks. Each
         demonstrator gives a short pitch, then runs the system live on a physical
         robot or in simulation while the audience suggests tasks, probes failure

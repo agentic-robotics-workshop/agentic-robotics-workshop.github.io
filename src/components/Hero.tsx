@@ -5,9 +5,9 @@ export function Hero() {
         <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xl font-bold uppercase tracking-[0.18em] text-text-primary md:text-2xl">
           <span>CoRL 2026</span>
           <span className="text-text-soft">/</span>
-          <span>Half-Day Workshop</span>
+          <span>November 12, 2026</span>
           <span className="text-text-soft">/</span>
-          <span>In-Person</span>
+          <span>Austin, Texas</span>
         </p>
 
         <h1 className="mx-auto mt-8 max-w-[14ch] font-display text-5xl font-semibold leading-[0.95] tracking-[-0.02em] text-text-primary sm:text-6xl md:text-7xl lg:text-[88px] lg:leading-[1] lg:tracking-[-2px]">

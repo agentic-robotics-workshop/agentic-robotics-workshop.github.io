@@ -10,10 +10,11 @@ export const NAV_LINKS = [
 ];
 
 export const SPEAKERS: Person[] = [
-  { name: "Ran Zhang", affiliation: "Tencent Video AI Center", image: "/people/ran_zhang.jpg" },
+  { name: "Ran Zhang", affiliation: "Tencent Video AI Center", image: "/people/ran_zhang.png" },
   { name: "Guanya Shi", affiliation: "Carnegie Mellon University", image: "/people/guanya_shi.png" },
   { name: "Ken Goldberg", affiliation: "UC Berkeley", image: "/people/ken_goldberg.jpg" },
-  { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.jpg" },
+  { name: "Wentao Yuan", affiliation: "Google Gemini Robotics", image: "/people/wentao_yuan.png" },
+  { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.png" },
 ];
 
 export const ORGANIZERS: Person[] = [
@@ -22,10 +23,10 @@ export const ORGANIZERS: Person[] = [
   { name: "Haoru Xue", affiliation: "UC Berkeley", image: "/people/haoru_xue.png", website: "https://haoruxue.github.io/" },
   { name: "Max Fu", affiliation: "UC Berkeley", image: "/people/max_fu.jpg", website: "https://max-fu.github.io/" },
   { name: "Wenli Xiao", affiliation: "Carnegie Mellon University", image: "/people/wenli_xiao.jpg", website: "https://wenlixiao.com/" },
-  { name: "Lingfeng Sun", image: "/people/lingfeng_sun.jpg", website: "https://lingfeng.moe/" },
+  { name: "Lingfeng Sun", affiliation: "UC Berkeley", image: "/people/lingfeng_sun.jpg", website: "https://lingfeng.moe/" },
   { name: "Yifei Shao", affiliation: "University of Pennsylvania", image: "/people/yifei_shao.webp", website: "https://shaoyifei96.github.io/" },
   { name: "Tianyu Li", affiliation: "University of Pennsylvania", image: "/people/tianyu_li.jpg", website: "https://imtianyuli.com/" },
-  { name: "Jiayuan Mao", affiliation: "Amazon FAR", image: "/people/jiayuan_mao.jpg", website: "https://jiayuanm.com/" },
+  { name: "Jiayuan Mao", affiliation: "University of Pennsylvania & Amazon FAR", image: "/people/jiayuan_mao.jpg", website: "https://jiayuanm.com/" },
   { name: "Utkarsh Mishra", affiliation: "Georgia Tech", image: "/people/utkarsh_mishra.jpeg", website: "https://umishra.me/" },
   { name: "Siyi Chen", affiliation: "University of Michigan", image: "/people/siyi_chen.jpeg", website: "https://chicychen.github.io/" },
   { name: "Nadia Figueroa", affiliation: "University of Pennsylvania", image: "/people/nadia_figueroa.jpg", website: "https://nbfigueroa.github.io/" },
@@ -81,13 +82,13 @@ export const FORMAT_MODES: NumberedItem[] = [
     number: "2",
     title: "Open call for demos on provided platforms",
     descHtml:
-      "Submit agentic systems to run on platforms supplied by the organizers and partners. Planning, VLA, memory, verification, and tool-use agents can participate <i>without shipping their own hardware</i>.",
+      "<b>Robot, compute, and an API for perception and control</b> are ready on-site — submit an agentic system and run it on a platform we provide. Planning, VLA, memory, verification, and tool-use agents can participate <i>without shipping their own hardware</i>.",
   },
   {
     number: "3",
     title: "Bring-your-own demos",
     descHtml:
-      "Bring your own robots or portable setups to broaden the session beyond any single embodiment. The organizers help with <b>shipping and logistics</b>.",
+      "Bring your own robots, portable setups, or simulation demos to broaden the session beyond any single embodiment. The organizers help with <b>shipping and logistics</b>.",
   },
 ];
 

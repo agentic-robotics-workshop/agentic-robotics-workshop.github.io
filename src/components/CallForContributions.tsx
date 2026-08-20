@@ -63,15 +63,23 @@ export function CallForContributions() {
             Demo Track
           </h3>
           <p className={`${BODY} mt-6`}>
-            Submit a short demonstration video (up to{" "}
-            <strong className="font-bold">3 minutes</strong>) plus a description of
-            hardware and software requirements.
+            We bring the robot, you bring the{" "}
+            <strong className="font-bold">agent demo</strong> — robot, compute, and
+            an API for perception and control are ready on-site.
+          </p>
+          <p className={`${BODY} mt-6`}>
+            Submit a <strong className="font-bold">video proof</strong> of your
+            system running to be considered, plus a description of hardware and
+            software requirements.
           </p>
           <p className={`${BODY} mt-6`}>
             We especially encourage demos that can be{" "}
             <strong className="font-bold">operated by audience members</strong>,
             span multiple open problems, or explicitly surface failure modes.
-            Platforms can be supplied by the organizers and partners.
+          </p>
+          <p className={`${BODY} mt-6`}>
+            A <strong className="font-bold">Best Demo Award</strong> carries a{" "}
+            <strong className="font-bold">$1,000</strong> prize.
           </p>
         </div>
 
@@ -80,9 +88,10 @@ export function CallForContributions() {
             Poster Track
           </h3>
           <p className={`${BODY} mt-6`}>
-            Submit <strong className="font-bold">short papers</strong> (up to 4
-            pages excluding references, in CoRL format) reporting research,
-            position arguments, or work in progress on the workshop themes.
+            Submit papers of up to{" "}
+            <strong className="font-bold">8 pages</strong> plus an unlimited
+            appendix, in the CoRL template, reporting research, position
+            arguments, or work in progress on the workshop themes.
           </p>
           <p className={`${BODY} mt-6`}>
             Each submission receives at least two reviews from a program committee

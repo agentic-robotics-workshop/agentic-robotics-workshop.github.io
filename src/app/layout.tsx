@@ -21,7 +21,7 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: "Workshop on Agentic Robotics (CoRL 2026)",
   description:
-    "A half-day CoRL 2026 workshop on bringing the agent paradigm — reasoning, tools, memory, and live demos — onto physical robots.",
+    "A CoRL 2026 workshop on bringing the agent paradigm — reasoning, tools, memory, and live demos — onto physical robots.",
 };
 
 export default function RootLayout({

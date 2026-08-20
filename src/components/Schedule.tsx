@@ -15,7 +15,7 @@ export function Schedule() {
         </span>
       </div>
       <p className="mt-6 max-w-[56rem] text-2xl font-light italic leading-snug text-text-primary">
-        A half-day afternoon program centered on live demonstrations and
+        An afternoon program centered on live demonstrations and
         audience-driven discussion.
       </p>
 
