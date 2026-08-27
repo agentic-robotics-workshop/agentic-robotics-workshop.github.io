@@ -100,10 +100,10 @@ export const SCHEDULE: { time: string; title: string }[] = [
 ];
 
 export const SUBMISSION_DEADLINE = {
-  display: "September 12, 2026",
+  display: "September 27, 2026",
   /** 11:59 PM Anywhere on Earth (UTC−12) */
   time: "11:59 PM Anywhere on Earth",
-  iso: "2026-09-13T11:59:00Z",
+  iso: "2026-09-28T11:59:00Z",
 };
 
 export const LINKS = {
