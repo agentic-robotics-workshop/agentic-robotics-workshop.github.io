@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Countdown } from "@/components/Countdown";
 import { LINKS, SUBMISSION_DEADLINE } from "@/lib/content";
 
@@ -81,6 +82,13 @@ export function CallForContributions() {
             A <strong className="font-bold">Best Demo Award</strong> carries a{" "}
             <strong className="font-bold">$1,000</strong> prize.
           </p>
+          <Link
+            id="demo-platform-track-cta"
+            href="/demo?from=demo-track"
+            className="mt-8 inline-flex rounded-full bg-[#141414] px-8 py-4 text-base font-bold tracking-[0.4px] text-white shadow-[0_8px_24px_rgba(0,0,0,0.16)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(0,0,0,0.24)]"
+          >
+            View Demo Platforms
+          </Link>
         </div>
 
         <div className="border border-black/[0.08] bg-black/[0.02] p-10 md:p-12">

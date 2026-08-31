@@ -22,6 +22,8 @@ export interface DemoPlatformCardProps {
     src: string;
     alt: string;
     caption: string;
+    width?: number;
+    height?: number;
   };
   specs: readonly {
     label: string;
@@ -150,8 +152,8 @@ export function DemoPlatformCard({
         <Image
           src={image.src}
           alt={image.alt}
-          width={1280}
-          height={700}
+          width={image.width ?? 1280}
+          height={image.height ?? 700}
           className="h-auto w-full border border-surface-border-soft bg-white object-cover"
         />
         <figcaption className="mt-2 text-sm font-light text-text-muted">

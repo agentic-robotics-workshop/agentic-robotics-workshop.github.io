@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Hero() {
   return (
     <section className="fade-in relative flex min-h-[78vh] flex-col justify-center overflow-hidden">
@@ -20,13 +22,20 @@ export function Hero() {
           <strong className="font-bold italic">recover</strong> on a real robot.
         </p>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#submissions"
-            className="rounded-full bg-[#141414] px-12 py-5 text-xl font-bold tracking-[0.5px] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(0,0,0,0.28)]"
+            className="inline-flex w-full max-w-[340px] items-center justify-center whitespace-nowrap rounded-full bg-[#141414] px-6 py-5 text-xl font-bold tracking-[0.5px] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(0,0,0,0.28)] sm:w-[340px] sm:px-12"
           >
             Call for Contributions
           </a>
+          <Link
+            id="demo-platform-hero-cta"
+            href="/demo?from=hero"
+            className="inline-flex w-full max-w-[340px] items-center justify-center whitespace-nowrap rounded-full border border-black/[0.16] bg-white px-6 py-5 text-xl font-bold tracking-[0.5px] text-text-primary shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.02] hover:border-black/[0.28] hover:shadow-[0_12px_40px_rgba(0,0,0,0.16)] sm:w-[340px] sm:px-12"
+          >
+            Demo Platform
+          </Link>
         </div>
       </div>
     </section>
