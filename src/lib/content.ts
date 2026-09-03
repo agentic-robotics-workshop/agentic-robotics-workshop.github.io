@@ -15,7 +15,7 @@ export const SPEAKERS: Person[] = [
   { name: "Ken Goldberg", affiliation: "UC Berkeley", image: "/people/ken_goldberg.jpg" },
   { name: "Wentao Yuan", affiliation: "Google Gemini Robotics", image: "/people/wentao_yuan.png" },
   { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.png" },
-  { name: "Tianyu Li", affiliation: "Dexmate", image: "/people/tianyu_li.jpg" },
+  { name: "Tianyu Li", affiliation: "Dexmate", image: "/people/tianyu_li_dexmate.jpg" },
 ];
 
 export const ORGANIZERS: Person[] = [
