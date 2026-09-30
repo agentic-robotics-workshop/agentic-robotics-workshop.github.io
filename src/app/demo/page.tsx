@@ -105,7 +105,7 @@ const faqs: { answer: ReactNode; question: string }[] = [
     question: "What is the deadline?",
     answer: (
       <>
-        <b>September 27, 2026</b>, 11:59 PM Anywhere on Earth, via OpenReview.
+        <b>September 30, 2026</b>, 11:59 PM Anywhere on Earth, via OpenReview.
       </>
     ),
   },
@@ -223,7 +223,7 @@ export default function DemoPage() {
               Call for Contributions
             </Link>{" "}
             — submission goes through OpenReview by{" "}
-            <strong className="font-bold">September 27, 2026</strong>.
+            <strong className="font-bold">September 30, 2026</strong>.
           </p>
           <div className="mt-10 grid grid-cols-1 gap-8 border-t border-surface-border pt-8 md:grid-cols-2 md:gap-12">
             <div>
