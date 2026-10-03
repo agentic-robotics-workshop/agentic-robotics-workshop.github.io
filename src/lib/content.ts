@@ -3,8 +3,7 @@ import type { NumberedItem, Person } from "@/types";
 export const NAV_LINKS = [
   { label: "Problems", href: "#problems" },
   { label: "Format", href: "#format" },
-  { label: "Speakers", href: "#speakers" },
-  { label: "Schedule", href: "#schedule" },
+  { label: "Schedule & Speakers", href: "#schedule" },
   { label: "Submissions", href: "#submissions" },
   { label: "Organizers", href: "#organizers" },
 ];
@@ -93,14 +92,14 @@ export const FORMAT_MODES: NumberedItem[] = [
   },
 ];
 
-export const SCHEDULE: { time: string; title: string }[] = [
+export const SCHEDULE: { time: string; title: string; speaker?: Person }[] = [
   { time: "14:00 – 14:05", title: "Opening remarks" },
-  { time: "14:05 – 14:25", title: "Invited talk — Ran Zhang" },
-  { time: "14:25 – 14:45", title: "Invited talk — Guanya Shi" },
-  { time: "14:45 – 15:05", title: "Invited talk — Ken Goldberg" },
-  { time: "15:05 – 15:25", title: "Invited talk — Wentao Yuan" },
-  { time: "15:25 – 15:45", title: "Invited talk — Jonathan Tremblay" },
-  { time: "15:45 – 16:05", title: "Invited talk — Tianyu Li" },
+  { time: "14:05 – 14:25", title: "Invited talk", speaker: SPEAKERS[0] },
+  { time: "14:25 – 14:45", title: "Invited talk", speaker: SPEAKERS[1] },
+  { time: "14:45 – 15:05", title: "Invited talk", speaker: SPEAKERS[2] },
+  { time: "15:05 – 15:25", title: "Invited talk", speaker: SPEAKERS[3] },
+  { time: "15:25 – 15:45", title: "Invited talk", speaker: SPEAKERS[4] },
+  { time: "15:45 – 16:05", title: "Invited talk", speaker: SPEAKERS[5] },
   { time: "16:05 – 16:15", title: "Coffee break" },
   { time: "16:15 – 17:55", title: "Live demo & poster session" },
   { time: "17:55 – 18:00", title: "Closing remarks & award ceremony" },

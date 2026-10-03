@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
 import { Problems } from "@/components/Problems";
 import { Format } from "@/components/Format";
-import { Speakers } from "@/components/Speakers";
 import { Schedule } from "@/components/Schedule";
 import { CallForContributions } from "@/components/CallForContributions";
 import { Organizers } from "@/components/Organizers";
@@ -18,7 +17,6 @@ export default function Home() {
           <Intro />
           <Problems />
           <Format />
-          <Speakers />
           <Schedule />
           <CallForContributions />
           <Organizers />
