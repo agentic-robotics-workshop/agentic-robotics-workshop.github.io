@@ -94,10 +94,16 @@ export const FORMAT_MODES: NumberedItem[] = [
 ];
 
 export const SCHEDULE: { time: string; title: string }[] = [
-  { time: "14:00 – 14:15", title: "Opening remarks & workshop overview" },
-  { time: "14:15 – 15:40", title: "Invited talks & demo preparation" },
-  { time: "15:40 – 16:00", title: "Coffee break" },
-  { time: "16:00 – 18:00", title: "Live demos & poster session" },
+  { time: "14:00 – 14:05", title: "Opening remarks" },
+  { time: "14:05 – 14:25", title: "Invited talk — Ran Zhang" },
+  { time: "14:25 – 14:45", title: "Invited talk — Guanya Shi" },
+  { time: "14:45 – 15:05", title: "Invited talk — Ken Goldberg" },
+  { time: "15:05 – 15:25", title: "Invited talk — Wentao Yuan" },
+  { time: "15:25 – 15:45", title: "Invited talk — Jonathan Tremblay" },
+  { time: "15:45 – 16:05", title: "Invited talk — Tianyu Li" },
+  { time: "16:05 – 16:15", title: "Coffee break" },
+  { time: "16:15 – 17:55", title: "Live demo & poster session" },
+  { time: "17:55 – 18:00", title: "Closing remarks & award ceremony" },
 ];
 
 export const SUBMISSION_DEADLINE = {
