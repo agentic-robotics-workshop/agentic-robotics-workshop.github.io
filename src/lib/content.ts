@@ -30,6 +30,7 @@ export const ORGANIZERS: Person[] = [
   { name: "Utkarsh Mishra", affiliation: "Georgia Tech", image: "/people/utkarsh_mishra.jpeg", website: "https://umishra.me/" },
   { name: "Siyi Chen", affiliation: "University of Michigan", image: "/people/siyi_chen.jpeg", website: "https://chicychen.github.io/" },
   { name: "Nadia Figueroa", affiliation: "University of Pennsylvania", image: "/people/nadia_figueroa.jpg", website: "https://nbfigueroa.github.io/" },
+  { name: "Zi Wang", affiliation: "UC Berkeley", image: "/people/zi_wang.jpg", website: "https://ziwang1105.github.io/" },
 ];
 
 export const PROBLEMS: NumberedItem[] = [
