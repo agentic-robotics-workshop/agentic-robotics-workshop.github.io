@@ -6,6 +6,7 @@ import { Format } from "@/components/Format";
 import { Schedule } from "@/components/Schedule";
 import { CallForContributions } from "@/components/CallForContributions";
 import { Organizers } from "@/components/Organizers";
+import { Sponsors } from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main id="top" className="min-h-screen bg-background text-text-primary">
         <Hero />
         <div className="flex flex-col gap-24 overflow-x-hidden py-20">
+          <Sponsors />
           <Intro />
           <Problems />
           <Format />
