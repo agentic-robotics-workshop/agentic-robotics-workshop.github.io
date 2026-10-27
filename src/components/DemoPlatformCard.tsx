@@ -18,6 +18,11 @@ export interface DemoPlatformCardProps {
   eyebrow: string;
   title: string;
   description: DemoPlatformRichText;
+  gettingStarted?: {
+    title: string;
+    description: string;
+    links: readonly { label: string; href: string }[];
+  };
   image: {
     src: string;
     alt: string;
@@ -90,6 +95,7 @@ export function DemoPlatformCard({
   eyebrow,
   title,
   description,
+  gettingStarted,
   image,
   specs,
   specsLink,
@@ -147,6 +153,30 @@ export function DemoPlatformCard({
       <p className="rich mt-5 max-w-[62ch] text-lg font-light leading-[1.65] text-text-primary">
         <RichText content={description} />
       </p>
+
+      {gettingStarted && (
+        <div className="mt-7 border-l-2 border-text-primary bg-white p-6">
+          <h4 className="font-display text-2xl font-semibold text-text-primary">
+            {gettingStarted.title}
+          </h4>
+          <p className="mt-2 max-w-[72ch] text-lg font-light leading-relaxed text-text-secondary">
+            {gettingStarted.description}
+          </p>
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3">
+            {gettingStarted.links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-semibold text-text-primary underline underline-offset-4 transition-colors hover:text-text-muted"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       <figure className="mt-8">
         <Image

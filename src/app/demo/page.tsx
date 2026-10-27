@@ -9,6 +9,10 @@ import { DemoReturnButton } from "@/components/DemoReturnButton";
 import { Header } from "@/components/Header";
 import { LINKS } from "@/lib/content";
 
+const NERO_REPO = "https://github.com/ZiWang1105/agile-x-deploy";
+const NERO_QUICK_START = `${NERO_REPO}#participant-quick-start`;
+const NERO_API_GUIDE = `${NERO_REPO}/blob/main/docs/WORKSHOP.md`;
+
 export const metadata: Metadata = {
   title: "Demo Platforms | Workshop on Agentic Robotics",
   description:
@@ -60,10 +64,12 @@ const faqs: { answer: ReactNode; question: string }[] = [
     question: "What does the API expose?",
     answer: (
       <>
-        Robot control and raw sensor streams, nothing above them. There are
-        <b> no object IDs, no pixel-to-grasp service and no manipulation
-        primitives</b> — perception, grounding and skill construction are the
-        demo, not the scaffolding.
+        For NERO, the workshop stack provides <b>Python functions and MCP tools</b>
+        {" "}for RGB-D capture, pixel deprojection, IK/FK, joint and TCP motion,
+        independent gripper control, and operation feedback. Simulation and
+        hardware share the same interfaces. Policies receive no simulator object
+        coordinates or scoring state; perception and task planning remain part
+        of your demo. G1 uses the official Unitree SDKs linked above.
       </>
     ),
   },
@@ -71,9 +77,13 @@ const faqs: { answer: ReactNode; question: string }[] = [
     question: "Is there a simulator before the workshop?",
     answer: (
       <>
-        The SDKs and reference simulations above are public today. A
-        <b> workshop scene</b> matching the station is coming soon and will be
-        linked here.
+        Yes. The <b>NERO participant preview</b> includes a MuJoCo simulator
+        with place, select, and sort tasks, plus Python and MCP policy examples.
+        {" "}<a className="underline underline-offset-2" href={NERO_QUICK_START} target="_blank" rel="noopener noreferrer">Start with the quick start</a>
+        {" "}on Linux x86_64. Generated Python execution additionally requires
+        Linux Landlock ABI ≥3 and libseccomp. Physical integration is coordinated
+        with the organizers; success in simulation does not guarantee success
+        on hardware. G1 reference simulators are linked above.
       </>
     ),
   },
@@ -127,18 +137,18 @@ const neroDescription: DemoPlatformRichText = [
 
 const neroApiItems: readonly DemoPlatformRichText[] = [
   [
-    { text: "Python SDK over CAN (" },
-    { text: "pyAgxArm", style: "bold" },
-    { text: ") or " },
-    { text: "ROS 2", style: "bold" },
+    { text: "Workshop Python API and MCP tools", style: "bold" },
     {
-      text: " with MoveIt 2: joint, Cartesian and MIT-level control, plus full state read-back. Method-by-method reference is in the SDK docs.",
+      text: " support code-as-policy and agent-as-policy through the same interfaces in simulation and on hardware: RGB-D capture, pixel deprojection, official AgileX IK/FK, joint/TCP motion, independent gripper control, and measured operation feedback.",
     },
   ],
   [
-    { text: "Simulation: Isaac Lab environments for NERO in Agilex-College; URDF in " },
-    { text: "agx_arm_urdf", style: "code" },
-    { text: ". A workshop scene matching the station is coming soon." },
+    { text: "MuJoCo participant simulator", style: "bold" },
+    { text: " includes place, select, and sort tasks, a live dashboard, and example Python and MCP policies. The reference setup uses two NERO arms with parallel-jaw grippers and one stand-mounted ZED 2i RGB-D camera; there are no wrist cameras. These examples do not establish Revo2 hand support." },
+  ],
+  [
+    { text: "Start on Linux x86_64", style: "bold" },
+    { text: ". Generated Python execution also requires Landlock ABI ≥3 and libseccomp. Use the simulator first and coordinate physical integration with the organizers. The shared controller does not provide obstacle-avoidance planning." },
   ],
 ];
 
@@ -263,6 +273,16 @@ export default function DemoPage() {
                 eyebrow="Platform A / AgileX Robotics"
                 title="Dual-arm AgileX NERO"
                 description={neroDescription}
+                gettingStarted={{
+                  title: "Start developing in simulation",
+                  description:
+                    "Participant preview: build your code-as-policy or agent-as-policy demo with the shared NERO Python and MCP interfaces. Follow the Linux x86_64 quick start, then test against the simulator before coordinating hardware integration with the organizers.",
+                  links: [
+                    { label: "Quick start →", href: NERO_QUICK_START },
+                    { label: "GitHub repository →", href: NERO_REPO },
+                    { label: "Participant guide & API →", href: NERO_API_GUIDE },
+                  ],
+                }}
                 image={{
                   src: "/images/demo/agilex-nero.jpg",
                   alt: "Two AgileX NERO 7-DoF arms on a shared torso column",
@@ -286,6 +306,9 @@ export default function DemoPage() {
                 }}
                 apiItems={neroApiItems}
                 docLinks={[
+                  { label: "Workshop repository — participant preview", href: NERO_REPO },
+                  { label: "Participant quick start", href: NERO_QUICK_START },
+                  { label: "Python & MCP API guide", href: NERO_API_GUIDE },
                   {
                     label: "pyAgxArm — SDK and NERO API reference",
                     href: "https://github.com/agilexrobotics/pyAgxArm",
