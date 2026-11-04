@@ -23,12 +23,12 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#submissions"
+          <Link
+            href="/papers"
             className="inline-flex w-full max-w-[340px] items-center justify-center whitespace-nowrap rounded-full bg-[#141414] px-6 py-5 text-xl font-bold tracking-[0.5px] text-white shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(0,0,0,0.28)] sm:w-[340px] sm:px-12"
           >
-            Call for Contributions
-          </a>
+            Accepted Papers
+          </Link>
           <Link
             id="demo-platform-hero-cta"
             href="/demo?from=hero"

@@ -7,6 +7,7 @@ import { Schedule } from "@/components/Schedule";
 import { CallForContributions } from "@/components/CallForContributions";
 import { Organizers } from "@/components/Organizers";
 import { Sponsors } from "@/components/Sponsors";
+import { AcceptedPapers } from "@/components/AcceptedPapers";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Problems />
           <Format />
           <Schedule />
+          <AcceptedPapers />
           <CallForContributions />
           <Organizers />
         </div>

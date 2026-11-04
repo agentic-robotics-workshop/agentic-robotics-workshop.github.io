@@ -29,7 +29,7 @@ export function Header({
           <span className="sm:hidden">Agentic Robotics</span>
         </a>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-6 xl:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
@@ -46,7 +46,7 @@ export function Header({
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="text-text-primary md:hidden"
+          className="text-text-primary xl:hidden"
         >
           {open ? (
             <CloseIcon className="h-6 w-6" />
@@ -57,7 +57,7 @@ export function Header({
       </div>
 
       {open && (
-        <nav className="border-t border-surface-border-soft bg-white/80 px-6 py-4 backdrop-blur-xl md:hidden">
+        <nav className="border-t border-surface-border-soft bg-white/80 px-6 py-4 backdrop-blur-xl xl:hidden">
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.label}>

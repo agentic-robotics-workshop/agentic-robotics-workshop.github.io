@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Countdown } from "@/components/Countdown";
 import { LINKS, SUBMISSION_DEADLINE } from "@/lib/content";
 
 const LABEL = "text-xs font-bold uppercase tracking-[0.18em] text-text-muted";
@@ -44,17 +43,16 @@ export function CallForContributions() {
 
       {/* Deadline */}
       <div className="mt-10 border border-black/[0.10] bg-black/[0.02] p-8 md:p-10">
-        <p className={LABEL}>Deadline</p>
+        <p className={LABEL}>Submissions closed</p>
         <p className="mt-3 font-display text-4xl font-semibold leading-none text-text-primary md:text-5xl">
           {SUBMISSION_DEADLINE.display}
         </p>
         <p className="mt-3 text-lg font-light text-text-primary">
           {SUBMISSION_DEADLINE.time}
         </p>
-        <p className={`${LABEL} mt-7`}>Submissions Close In</p>
-        <div className="mt-4">
-          <Countdown deadlineIso={SUBMISSION_DEADLINE.iso} />
-        </div>
+        <Link href="/papers" className="mt-7 inline-block text-lg font-semibold text-text-primary underline underline-offset-4 hover:text-text-muted">
+          View accepted papers →
+        </Link>
       </div>
 
       {/* Demo Track | Poster Track */}

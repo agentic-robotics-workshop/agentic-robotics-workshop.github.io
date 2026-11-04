@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { label: "Problems", href: "#problems" },
   { label: "Format", href: "#format" },
   { label: "Schedule & Speakers", href: "#schedule" },
+  { label: "Papers", href: "/papers" },
   { label: "Submissions", href: "#submissions" },
   { label: "Organizers", href: "#organizers" },
 ];
