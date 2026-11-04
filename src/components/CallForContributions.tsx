@@ -79,8 +79,9 @@ export function CallForContributions() {
             span multiple open problems, or explicitly surface failure modes.
           </p>
           <p className={`${BODY} mt-6`}>
-            A <strong className="font-bold">Best Demo Award</strong> carries a{" "}
-            <strong className="font-bold">$1,000</strong> prize.
+            A <strong className="font-bold">Best Demo Award</strong>, sponsored
+            by Dexmate, carries a <strong className="font-bold">$1,000</strong>{" "}
+            prize.
           </p>
           <Link
             id="demo-platform-track-cta"
@@ -105,6 +106,11 @@ export function CallForContributions() {
             Each submission receives at least two reviews from a program committee
             of <strong className="font-bold">15–20 researchers</strong> across the
             relevant communities.
+          </p>
+          <p className={`${BODY} mt-6`}>
+            A <strong className="font-bold">Best Paper Award</strong>, sponsored
+            by Waddle Labs, carries a <strong className="font-bold">$1,000</strong>{" "}
+            prize.
           </p>
         </div>
       </div>

@@ -3,6 +3,7 @@ const SPONSORS = [
   { name: "Dexmate", logo: "/logos/dexmate.png", website: "https://www.dexmate.com/" },
   { name: "Unitree", logo: "/logos/unitree.svg", website: "https://www.unitree.com/" },
   { name: "AgileX", logo: "/logos/agilex.png", website: "https://global.agilex.ai/" },
+  { name: "Waddle Labs", logo: "/logos/waddle.svg", website: "https://waddlelabs.ai/" },
 ];
 
 export function Sponsors() {
@@ -14,7 +15,7 @@ export function Sponsors() {
       <h2 className="text-center text-xs font-bold uppercase tracking-[0.22em] text-text-muted">
         Sponsors
       </h2>
-      <ul className="mt-8 grid grid-cols-2 items-center gap-x-10 gap-y-8 border-b border-black/[0.10] pb-12 md:grid-cols-4 md:gap-x-16 md:pb-16">
+      <ul className="mt-8 grid grid-cols-2 items-center gap-x-10 gap-y-8 border-b border-black/[0.10] pb-12 md:grid-cols-3 md:gap-x-16 lg:grid-cols-5 md:pb-16">
         {SPONSORS.map((sponsor) => (
           <li key={sponsor.name}>
             <a
