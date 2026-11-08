@@ -37,6 +37,19 @@ export function Hero() {
             Demo Platform
           </Link>
         </div>
+
+        <p className="mx-auto mt-8 max-w-[52ch] text-lg leading-relaxed text-text-primary md:text-xl">
+          Join remotely on{" "}
+          <a
+            href="https://mcgill.zoom.us/j/5870027202"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline underline-offset-4 hover:opacity-70"
+          >
+            Zoom
+          </a>
+          . Get the password from our social accounts or ask anyone at the event.
+        </p>
       </div>
     </section>
   );
