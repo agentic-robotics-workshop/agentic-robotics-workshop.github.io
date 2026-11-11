@@ -46,7 +46,18 @@ export function Schedule() {
                     {slot.title} · {slot.minutes ?? 20} minutes
                   </p>
                   <h3 className="mt-2 font-display text-3xl font-medium leading-tight tracking-tight text-text-primary md:text-4xl">
-                    {slot.speaker.name}
+                    {slot.speaker.website ? (
+                      <a
+                        href={slot.speaker.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-black/20 decoration-1 underline-offset-[6px] transition-colors duration-150 hover:decoration-text-primary"
+                      >
+                        {slot.speaker.name}
+                      </a>
+                    ) : (
+                      slot.speaker.name
+                    )}
                   </h3>
                   <p className="mt-1 text-lg font-light leading-snug text-text-secondary md:text-xl">
                     {slot.speaker.affiliation}

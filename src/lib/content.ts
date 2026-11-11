@@ -10,12 +10,12 @@ export const NAV_LINKS = [
 ];
 
 export const SPEAKERS: Person[] = [
-  { name: "Ran Zhang", affiliation: "Tencent Video AI Center", image: "/people/ran_zhang.png" },
-  { name: "Guanya Shi", affiliation: "Carnegie Mellon University", image: "/people/guanya_shi.png" },
-  { name: "Ken Goldberg", affiliation: "UC Berkeley", image: "/people/ken_goldberg.jpg" },
-  { name: "Wentao Yuan", affiliation: "Google Gemini Robotics", image: "/people/wentao_yuan.png" },
-  { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.png" },
-  { name: "Tianyu Li", affiliation: "Dexmate", image: "/people/tianyu_li_dexmate.jpg" },
+  { name: "Ran Zhang", affiliation: "Tencent Video AI Center", image: "/people/ran_zhang.png", website: "https://ran-zhang.com/" },
+  { name: "Guanya Shi", affiliation: "Carnegie Mellon University", image: "/people/guanya_shi.png", website: "https://www.gshi.me/" },
+  { name: "Ken Goldberg", affiliation: "UC Berkeley", image: "/people/ken_goldberg.jpg", website: "https://goldberg.berkeley.edu/" },
+  { name: "Wentao Yuan", affiliation: "Google Gemini Robotics", image: "/people/wentao_yuan.png", website: "https://wentaoyuan.github.io/" },
+  { name: "Jonathan Tremblay", affiliation: "NVIDIA", image: "/people/jonathan_tremblay.png", website: "https://research.nvidia.com/person/jonathan-tremblay" },
+  { name: "Tianyu Li", affiliation: "Dexmate", image: "/people/tianyu_li_dexmate.jpg", website: "https://easypapersniper.github.io/" },
 ];
 
 export const ORGANIZERS: Person[] = [
