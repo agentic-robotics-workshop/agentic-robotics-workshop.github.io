@@ -97,7 +97,7 @@ export const FORMAT_MODES: NumberedItem[] = [
 
 /** Sponsor talk speakers (shown in the schedule only, not counted as invited speakers). */
 export const SPONSOR_SPEAKERS: Person[] = [
-  { name: "David Tse", affiliation: "President, xdof", website: "https://www.xdof.ai/" },
+  { name: "Philipp Wu", affiliation: "CEO, xdof", image: "/people/philipp_wu.jpg", website: "https://wuphilipp.github.io/" },
 ];
 
 export const SCHEDULE: {
@@ -106,16 +106,25 @@ export const SCHEDULE: {
   speaker?: Person;
   /** talk length shown next to the title; defaults to 20 */
   minutes?: number;
+  /** optional short description shown under the speaker */
+  description?: string;
 }[] = [
   { time: "14:00 – 14:05", title: "Opening remarks" },
   { time: "14:05 – 14:25", title: "Invited talk", speaker: SPEAKERS[0] },
   { time: "14:25 – 14:45", title: "Invited talk", speaker: SPEAKERS[1] },
   { time: "14:45 – 15:05", title: "Invited talk", speaker: SPEAKERS[2] },
-  { time: "15:05 – 15:25", title: "Invited talk", speaker: SPEAKERS[3] },
-  { time: "15:25 – 15:45", title: "Invited talk", speaker: SPEAKERS[4] },
-  { time: "15:45 – 16:05", title: "Invited talk", speaker: SPEAKERS[5] },
-  { time: "16:05 – 16:15", title: "Coffee break" },
-  { time: "16:15 – 16:20", title: "Sponsor talk", speaker: SPONSOR_SPEAKERS[0], minutes: 5 },
+  {
+    time: "15:05 – 15:10",
+    title: "Sponsor talk",
+    speaker: SPONSOR_SPEAKERS[0],
+    minutes: 5,
+    description:
+      "XDOF is a robotics infrastructure company working with some of the world’s leading AI and robotics teams on large-scale data collection, processing, evaluation, hardware, and other tools. We provide egocentric, teleoperation, and multimodal robotics data, along with the software and hardware infrastructure and other services to help customers move faster from data collection to model training and deployment.",
+  },
+  { time: "15:10 – 15:30", title: "Invited talk", speaker: SPEAKERS[3] },
+  { time: "15:30 – 15:50", title: "Invited talk", speaker: SPEAKERS[4] },
+  { time: "15:50 – 16:10", title: "Invited talk", speaker: SPEAKERS[5] },
+  { time: "16:10 – 16:20", title: "Coffee break" },
   { time: "16:20 – 17:55", title: "Live demo & poster session" },
   { time: "17:55 – 18:00", title: "Closing remarks & award ceremony" },
 ];

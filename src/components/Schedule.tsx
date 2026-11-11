@@ -51,6 +51,11 @@ export function Schedule() {
                   <p className="mt-1 text-lg font-light leading-snug text-text-secondary md:text-xl">
                     {slot.speaker.affiliation}
                   </p>
+                  {slot.description && (
+                    <p className="mt-3 max-w-[48rem] text-base font-light leading-relaxed text-text-secondary">
+                      {slot.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ) : (
