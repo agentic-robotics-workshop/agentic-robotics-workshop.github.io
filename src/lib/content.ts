@@ -119,7 +119,7 @@ export const SCHEDULE: {
     speaker: SPONSOR_SPEAKERS[0],
     minutes: 5,
     description:
-      "XDOF is a robotics infrastructure company working with some of the world’s leading AI and robotics teams on large-scale data collection, processing, evaluation, hardware, and other tools. We provide egocentric, teleoperation, and multimodal robotics data, along with the software and hardware infrastructure and other services to help customers move faster from data collection to model training and deployment.",
+      "Philipp is the Cofounder and CEO of XDOF.ai, the world's leading robotics infrastructure provider. He received his Ph.D. at UC Berkeley advised by Professor Pieter Abbeel where he published works such as Daydreamer and GELLO. Today, Philipp will share the latest progress with XDOF and how XDOF is helping advance agentic robotics.",
   },
   { time: "15:10 – 15:30", title: "Invited talk", speaker: SPEAKERS[3] },
   { time: "15:30 – 15:50", title: "Invited talk", speaker: SPEAKERS[4] },
