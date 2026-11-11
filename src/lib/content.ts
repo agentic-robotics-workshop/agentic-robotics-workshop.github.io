@@ -95,7 +95,18 @@ export const FORMAT_MODES: NumberedItem[] = [
   },
 ];
 
-export const SCHEDULE: { time: string; title: string; speaker?: Person }[] = [
+/** Sponsor talk speakers (shown in the schedule only, not counted as invited speakers). */
+export const SPONSOR_SPEAKERS: Person[] = [
+  { name: "David Tse", affiliation: "President, xdof", website: "https://www.xdof.ai/" },
+];
+
+export const SCHEDULE: {
+  time: string;
+  title: string;
+  speaker?: Person;
+  /** talk length shown next to the title; defaults to 20 */
+  minutes?: number;
+}[] = [
   { time: "14:00 – 14:05", title: "Opening remarks" },
   { time: "14:05 – 14:25", title: "Invited talk", speaker: SPEAKERS[0] },
   { time: "14:25 – 14:45", title: "Invited talk", speaker: SPEAKERS[1] },
@@ -104,7 +115,8 @@ export const SCHEDULE: { time: string; title: string; speaker?: Person }[] = [
   { time: "15:25 – 15:45", title: "Invited talk", speaker: SPEAKERS[4] },
   { time: "15:45 – 16:05", title: "Invited talk", speaker: SPEAKERS[5] },
   { time: "16:05 – 16:15", title: "Coffee break" },
-  { time: "16:15 – 17:55", title: "Live demo & poster session" },
+  { time: "16:15 – 16:20", title: "Sponsor talk", speaker: SPONSOR_SPEAKERS[0], minutes: 5 },
+  { time: "16:20 – 17:55", title: "Live demo & poster session" },
   { time: "17:55 – 18:00", title: "Closing remarks & award ceremony" },
 ];
 

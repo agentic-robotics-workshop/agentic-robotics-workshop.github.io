@@ -43,7 +43,7 @@ export function Schedule() {
                 )}
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-text-muted">
-                    {slot.title} · 20 minutes
+                    {slot.title} · {slot.minutes ?? 20} minutes
                   </p>
                   <h3 className="mt-2 font-display text-3xl font-medium leading-tight tracking-tight text-text-primary md:text-4xl">
                     {slot.speaker.name}
