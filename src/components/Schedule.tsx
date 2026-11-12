@@ -1,4 +1,4 @@
-import { SCHEDULE } from "@/lib/content";
+import { SCHEDULE, VENUE } from "@/lib/content";
 
 export function Schedule() {
   return (
@@ -14,6 +14,9 @@ export function Schedule() {
           Tentative
         </span>
       </div>
+      <p className="mt-5 text-lg font-semibold text-text-secondary md:text-xl">
+        {VENUE.hotel} · {VENUE.room} ({VENUE.floor})
+      </p>
       <p className="mt-6 max-w-[56rem] text-2xl font-light italic leading-snug text-text-primary">
         Six invited talks on agentic robotics, followed by live demonstrations,
         posters, and audience-driven discussion.

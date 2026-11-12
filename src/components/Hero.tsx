@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VENUE } from "@/lib/content";
 
 export function Hero() {
   return (
@@ -10,6 +11,12 @@ export function Hero() {
           <span>November 12, 2026</span>
           <span className="text-text-soft">/</span>
           <span>Austin, Texas</span>
+        </p>
+
+        <p className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-lg font-semibold text-text-primary md:text-xl">
+          <span>{VENUE.hotel}</span>
+          <span aria-hidden="true" className="text-text-soft">·</span>
+          <span>{VENUE.room} ({VENUE.floor})</span>
         </p>
 
         <h1 className="mx-auto mt-8 max-w-[14ch] font-display text-5xl font-semibold leading-[0.95] tracking-[-0.02em] text-text-primary sm:text-6xl md:text-7xl lg:text-[88px] lg:leading-[1] lg:tracking-[-2px]">

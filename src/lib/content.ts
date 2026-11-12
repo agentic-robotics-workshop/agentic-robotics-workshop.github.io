@@ -1,5 +1,11 @@
 import type { NumberedItem, Person } from "@/types";
 
+export const VENUE = {
+  hotel: "JW Marriott",
+  room: "Room 203–204",
+  floor: "2nd floor",
+};
+
 export const NAV_LINKS = [
   { label: "Problems", href: "#problems" },
   { label: "Format", href: "#format" },
