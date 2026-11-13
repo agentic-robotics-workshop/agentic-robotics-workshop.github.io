@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Video } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { VENUE } from "@/lib/content";
 
 export function Hero() {
@@ -30,37 +30,33 @@ export function Hero() {
           <strong className="font-bold italic">recover</strong> on a real robot.
         </p>
 
-        <div className="mx-auto mt-9 max-w-[696px] rounded-2xl border border-blue-200 bg-blue-50 p-5 text-left shadow-sm sm:p-6">
+        <div className="mx-auto mt-9 max-w-[696px] rounded-2xl border border-red-200 bg-red-50 p-5 text-left shadow-sm sm:p-6">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.14em] text-blue-700">
-                Attend online
+              <p className="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.14em] text-text-primary">
+                <svg aria-hidden="true" viewBox="0 0 28 20" className="h-5 w-7 shrink-0">
+                  <path fill="#FF0000" d="M27.4 3.1A3.5 3.5 0 0 0 24.9.6C22.7 0 14 0 14 0S5.3 0 3.1.6A3.5 3.5 0 0 0 .6 3.1C0 5.3 0 10 0 10s0 4.7.6 6.9a3.5 3.5 0 0 0 2.5 2.5C5.3 20 14 20 14 20s8.7 0 10.9-.6a3.5 3.5 0 0 0 2.5-2.5C28 14.7 28 10 28 10s0-4.7-.6-6.9Z" />
+                  <path fill="#FFF" d="m11 14.3 7.3-4.3L11 5.7v8.6Z" />
+                </svg>
+                Watch on YouTube
               </p>
-              <h2 className="mt-1 text-2xl font-bold text-blue-950">
-                Join the workshop on Zoom
+              <h2 className="mt-2 text-2xl font-bold text-text-primary">
+                Workshop recording
               </h2>
             </div>
             <a
-              href="https://mcgill.zoom.us/j/5870027202?pwd=XmygzB9GeEzM1DSzzHEQBks7btaLTV.1&omn=83654819472"
+              href="https://youtu.be/020my0YnzIc"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-blue-700 px-6 py-4 text-lg font-bold text-white shadow-md transition-colors hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#FF0000] px-6 py-4 text-lg font-bold text-white shadow-md transition-colors hover:bg-[#CC0000] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-700"
             >
-              <Video aria-hidden="true" className="size-5" />
-              Join on Zoom
+              Watch the Recording
               <ArrowUpRight aria-hidden="true" className="size-5" />
             </a>
           </div>
-          <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-3 border-t border-blue-200 pt-4 text-base text-blue-950">
-            <div className="flex flex-wrap items-baseline gap-x-2">
-              <dt>Meeting ID</dt>
-              <dd className="font-bold tabular-nums">587 002 7202</dd>
-            </div>
-            <div className="flex items-baseline gap-2">
-              <dt>Passcode</dt>
-              <dd className="font-bold tabular-nums">123456</dd>
-            </div>
-          </dl>
+          <p className="mt-5 border-t border-red-200 pt-4 text-base text-text-secondary">
+            Watch the Workshop on Agentic Robotics recording on YouTube.
+          </p>
         </div>
 
         <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
