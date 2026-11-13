@@ -7,6 +7,7 @@ export const VENUE = {
 };
 
 export const NAV_LINKS = [
+  { label: "Awards", href: "#awards" },
   { label: "Problems", href: "#problems" },
   { label: "Format", href: "#format" },
   { label: "Schedule & Speakers", href: "#schedule" },
