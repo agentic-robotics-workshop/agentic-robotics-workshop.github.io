@@ -45,7 +45,7 @@ export function Hero() {
               </h2>
             </div>
             <a
-              href="https://youtu.be/020my0YnzIc"
+              href="https://www.youtube.com/watch?v=SuZwqlS-weA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#FF0000] px-6 py-4 text-lg font-bold text-white shadow-md transition-colors hover:bg-[#CC0000] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-700"
